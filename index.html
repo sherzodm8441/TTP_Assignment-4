@@ -1,8 +1,40 @@
 <!DOCTYPE html>
 <html>
 
-<head></head>
+<head>
+    <link rel="stylesheet" href="./style.css" type="text/css">
+</head>
 
-<body></body>
+<body>
+    <div>
+        <div class="question1" id="btn1">
+            <button onclick="button1()">Button 1</button><span id="span1"></span>
+        </div>
+        <div id="btn2">
+            <button onclick="button2()">Button 2</button><span id="span2"></span>
+        </div>
+    </div>
+    
+
+
+    <div class="question2" onmouseover="q2Function()">
+        <h1>Don't hover over me</h1>
+    </div>
+
+
+    <div class="question3">
+        <h1 id="form-header">This Form</h1>
+        <form onsubmit="q4Function(event)">
+            <label for="username">Username </label><input name="username" type="text"/><br>
+            <label>Email </label><input name="email" type="email"/><br>
+            <label>Password </label><input name="password" type="password"/>
+            <input type="submit"/>
+
+        </form>
+    </div>
+    <script type="text/javascript" src="/script.js"></script>
+  
+    
+</body>
 
 </html>
