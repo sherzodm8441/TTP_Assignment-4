@@ -1,19 +1,42 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Button Manipulation</title>
-    <script src="myScripts.js" async></script>
-    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <link rel="stylesheet" href="./style.css" type="text/css">
 </head>
 
 <body>
-    <button id="button1">Click me</button><button id="button2">Click me</button>
-    <p id="argument"></p>
+    <div>
+        <div class="question1" id="btn1">
+            <button onclick="button1()">Button 1</button><span id="span1"></span>
+        </div>
+        <div id="btn2">
+            <button onclick="button2()">Button 2</button><span id="span2"></span>
+        </div>
+    </div>
+    
 
+
+    <div class="question2" onmouseover="q2Function()">
+        <h1>Don't hover over me</h1>
+    </div>
+
+
+    <div class="question3">
+        <h1 id="form-header">This Form</h1>
+        <form onsubmit="q4Function(event)">
+            <label for="username">Username </label><input name="username" type="text"/><br>
+            <label>Email </label><input name="email" type="email"/><br>
+            <label>Password </label><input name="password" type="password"/>
+            <input type="submit"/>
+
+        </form>
+    </div>
+    <script type="text/javascript" src="/script.js"></script>
+  
+    
 </body>
+
 
 </html>
