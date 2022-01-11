@@ -26,11 +26,12 @@ function q4Function(event){
         formHeader.textContent = "Success!"
     }
     
-    function sphereVolume() {
+}
+
+function sphereVolume() {
     var radius = document.getElementById("radius").value;
     var volume = ((4 / 3) * Math.PI * Math.pow(radius, 3));
     var answer = document.getElementById("answer");
     answer.textContent = ("The volume of your wonderful sphere is: " + volume);
 
-}
 }
