@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="CSS/style.css">
-    <script src="myScripts.js" async></script>
+    <script src="./script.js" ></script>
     <title>Sphere</title>
 
 </head>
@@ -17,10 +17,13 @@
     <br>
     <p>Welcome to my Sphere Volume Calculator. All you have to do is type in your radius here in the box and the magic sphere elves will find your Volume!</p>
 
-    <input type="number" placeholder="Enter Radius" id="radius">
-    <button type="button" onclick="sphereVolume();">Get Volume</button>
+    
+    
+    <form onsubmit="sphereVolume(event)"> 
+        <input type="number" id="radius">
+        <button type="submit">Get Volume</button>
+    </form>
     <br>
-
     <h2 id="answer"></h2>
 
 
