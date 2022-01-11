@@ -7,36 +7,52 @@
 </head>
 
 <body>
-    <div>
-        <div class="question1" id="btn1">
-            <button onclick="button1()">Button 1</button><span id="span1"></span>
+    <div class="mainAssignment">
+        <div>
+            <div class="question1" id="btn1">
+                <button onclick="button1()">Button 1</button><span id="span1"></span>
+            </div>
+            <div id="btn2">
+                <button onclick="button2()">Button 2</button><span id="span2"></span>
+            </div>
         </div>
-        <div id="btn2">
-            <button onclick="button2()">Button 2</button><span id="span2"></span>
-        </div>
-    </div>
+        
     
-
-
-    <div class="question2" onmouseover="q2Function()">
-        <h1>Don't hover over me</h1>
+    
+        <div class="question2" onmouseover="q2Function()">
+            <h1>Don't hover over me</h1>
+        </div>
+    
+    
+        <div class="question3">
+            <h1 id="form-header">Please Fill Out This Form</h1>
+            <form onsubmit="q4Function(event)">
+                <label for="username">Username </label><input name="username" type="text"/><br>
+                <label>Email </label><input name="email" type="email"/><br>
+                <label>Password </label><input name="password" type="password"/>
+                <input type="submit"/>
+    
+            </form>
+        </div>
+        <br>
+        <script type="text/javascript" src="./script.js"></script>
+        
     </div>
 
+    <div class="sphereCalculator">
+        <h1 id="sphere">Sphere Volume Calculator</h1>
+        <img id=coolSphere src="https://c.tenor.com/nnWW4gIYdQUAAAAC/esfera-sphere.gif" alt="Cool Sphere" class="center" width="250" />
 
-    <div class="question3">
-        <h1 id="form-header">This Form</h1>
-        <form onsubmit="q4Function(event)">
-            <label for="username">Username </label><input name="username" type="text"/><br>
-            <label>Email </label><input name="email" type="email"/><br>
-            <label>Password </label><input name="password" type="password"/>
-            <input type="submit"/>
+        <p>Welcome to my Sphere Volume Calculator. 
+            <br>All you have to do is type in your radius here in the box and the magic sphere elves will find your Volume!</p>
 
-        </form>
+        <input type="number" placeholder="Enter Radius" id="radius">
+        <button type="button" onclick="sphereVolume()">Get Volume</button>
+
+
+        <h2 id="answer"></h2>
     </div>
-    <br>
-    <h4><a href="./sphere.html">Sphere</a></h4>
-    <script type="text/javascript" src="./script.js"></script>
-  
+        
     
 </body>
 

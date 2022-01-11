@@ -6,7 +6,7 @@ function button1(){
     word2.textContent = ""
 }
 function button2(){
-    word2.textContent = "No, I'm right"
+    word2.textContent = "No, I'm right!"
     word1.textContent = ""
 }
 
@@ -22,16 +22,17 @@ function q4Function(event){
 
     if(password != 12345678){
         alert("Your password is incorrect")
-    }else{
+        formHeader.textContent = "Please Fill Out This Form"
+    } else{
         formHeader.textContent = "Success!"
     }
     
 }
 
 function sphereVolume() {
-    var radius = document.getElementById("radius").value;
-    var volume = ((4 / 3) * Math.PI * Math.pow(radius, 3));
-    var answer = document.getElementById("answer");
+    console.log("in sphere")
+    const radius = document.getElementById("radius").value;
+    const volume = Math.round(((4 / 3) * Math.PI * Math.pow(radius, 3)));
+    const answer = document.getElementById("answer");
     answer.textContent = ("The volume of your wonderful sphere is: " + volume);
-
 }
